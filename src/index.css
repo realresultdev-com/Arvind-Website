@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  --color-warm-white: #FAFAF7;
+  --color-light-neutral: #F2F3F0;
+  --color-charcoal: #202421;
+  --color-muted: #6B716D;
+  --color-teal: #276B65;
+  --color-teal-dark: #1E5550;
+  --color-teal-light: #F0F6F5;
+  --color-subtle-border: #E2E5E0;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color-scheme: light;
+  background-color: #FAFAF7;
+  color: #202421;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #FAFAF7;
+  color: #202421;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+  color: #202421;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid #276B65;
+  outline-offset: 2px;
+}
+
+/* Continuous Single-Row Marquee Animation */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-scroll {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 45s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
