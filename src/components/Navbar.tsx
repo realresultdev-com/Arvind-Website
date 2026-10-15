@@ -22,7 +22,7 @@ export function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-[#FAFAF7]/95 backdrop-blur-md border-b border-[#E2E5E0] transition-colors">
+    <header className="sticky top-0 z-50 bg-[#FAFAF7] border-b border-[#E2E5E0] transition-colors">
       <div className="max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="flex items-center justify-between h-20 gap-4 sm:gap-6 lg:gap-8">
           {/* Brand Wordmark & Official Dental Logo (One Language Displayed at a Time) */}
