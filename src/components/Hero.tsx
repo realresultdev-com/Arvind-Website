@@ -152,14 +152,14 @@ export function Hero() {
             
             {/* Responsive Grand Headline */}
             <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] xl:text-[3.85rem] font-bold text-[#18211E] tracking-tight mb-3 sm:mb-5 leading-[1.12]">
-              {isTamil ? 'ஆரோக்கியமான புன்னகை இங்கே தொடங்குகிறது.' : 'A Healthier Smile Starts Here.'}
+              {isTamil ? 'ஆரோக்கியமான புன்னகை இங்கே தொடங்குகிறது.' : 'Complete Tooth Care For Your Whole Family.'}
             </h1>
 
             {/* Catchy Clinic Mantra */}
             <p className="text-[15px] sm:text-lg md:text-xl lg:text-[1.28rem] font-medium text-[#2B413B] leading-snug mb-6 sm:mb-9 max-w-xl tracking-tight">
               {isTamil
                 ? 'ஒவ்வொரு வருகையிலும் ஆறுதல். ஒவ்வொரு புன்னகையிலும் நம்பிக்கை.'
-                : 'Comfort in every visit. Confidence in every smile.'}
+                : 'No pain. No fear. Friendly doctors, clean tools, and honest advice.'}
             </p>
 
             {/* Primary CTA Button */}
@@ -168,7 +168,7 @@ export function Hero() {
                 to="/contact"
                 className="inline-flex items-center justify-center gap-2.5 bg-[#276B65] hover:bg-[#1E5550] text-white text-sm sm:text-base font-bold uppercase tracking-wider px-8 sm:px-9 py-4 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-[0.98] group"
               >
-                <span>{isTamil ? 'முன்பதிவு செய்ய' : 'Book an Appointment'}</span>
+                <span>{isTamil ? 'முன்பதிவு செய்ய' : 'Book Doctor Appointment'}</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>

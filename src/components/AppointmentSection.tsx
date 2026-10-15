@@ -74,13 +74,13 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
         {/* Section Heading */}
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#276B65] font-semibold mb-3">
-            <span>Appointments & Inquiries</span>
+            <span>Book Doctor Appointment</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-[#202421] tracking-tight leading-tight mb-4">
-            Contact & Book an Appointment.
+            Easy Appointment Booking.
           </h2>
           <p className="text-base text-[#6B716D] leading-relaxed">
-            Reach out directly by phone, visit our clinic opposite Sanu Hotel on Salem Main Road, or submit your appointment preferences below for an instant response.
+            Call us directly, message on WhatsApp, or send your name and mobile number below. Our reception will confirm your time quickly.
           </p>
         </div>
 
@@ -89,13 +89,13 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-[#FAFAF7] rounded-2xl border border-[#E2E5E0] p-8 shadow-xs space-y-6">
               <h3 className="font-heading text-xl font-semibold text-[#202421]">
-                Clinic Information
+                Clinic Contact Details
               </h3>
 
               {/* Phone */}
               <div className="space-y-1">
                 <span className="text-xs uppercase tracking-wider text-[#6B716D] block font-medium">
-                  Direct Telephone
+                  Phone / Mobile Number
                 </span>
                 <a
                   href={`tel:${CLINIC_INFO.phoneRaw}`}
@@ -108,7 +108,7 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
               {/* Email */}
               <div className="space-y-1 pt-2 border-t border-[#E2E5E0]">
                 <span className="text-xs uppercase tracking-wider text-[#6B716D] block font-medium">
-                  Email Address
+                  Email
                 </span>
                 <a
                   href={`mailto:${CLINIC_INFO.email}`}
@@ -121,7 +121,7 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
               {/* Address */}
               <div className="space-y-1.5 pt-2 border-t border-[#E2E5E0]">
                 <span className="text-xs uppercase tracking-wider text-[#6B716D] block font-medium">
-                  Location & Address
+                  Clinic Address & Landmark
                 </span>
                 <p className="text-sm text-[#202421] leading-relaxed">
                   {CLINIC_INFO.addressEnglish}
@@ -134,7 +134,7 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
               {/* Timings */}
               <div className="space-y-1.5 pt-2 border-t border-[#E2E5E0]">
                 <span className="text-xs uppercase tracking-wider text-[#6B716D] block font-medium">
-                  Clinical Hours
+                  Clinic Timings
                 </span>
                 <div className="text-xs space-y-1">
                   {CLINIC_INFO.timings.map((t) => (
@@ -153,7 +153,7 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-xs font-semibold text-[#202421] hover:text-[#276B65] bg-white border border-[#E2E5E0] px-4 py-2.5 rounded-lg transition-colors shadow-2xs"
                 >
-                  <span>Open in Google Maps →</span>
+                  <span>Open Google Maps →</span>
                 </a>
 
                 <a
@@ -170,10 +170,10 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
             {/* Direct Call Card */}
             <div className="bg-[#276B65] text-white rounded-2xl p-6 sm:p-7 shadow-sm">
               <h4 className="font-heading font-semibold text-lg mb-1">
-                Prefer to Schedule by Phone?
+                Want to Book by Phone Call?
               </h4>
               <p className="text-xs text-white/80 leading-relaxed mb-4">
-                Call our reception directly for immediate inquiries, same-day relief, or directions to the clinic.
+                Call our reception directly for quick appointment or if you have severe tooth pain.
               </p>
               <a
                 href={`tel:${CLINIC_INFO.phoneRaw}`}
@@ -189,10 +189,10 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
             <div id="appointment-form-card" className="bg-[#FAFAF7] rounded-2xl border border-[#E2E5E0] p-8 sm:p-10 shadow-xs">
               <div className="mb-6">
                 <h3 className="font-heading text-xl font-semibold text-[#202421] mb-1">
-                  Request an Appointment
+                  Book Your Doctor Appointment
                 </h3>
                 <p className="text-xs sm:text-sm text-[#6B716D]">
-                  Submit your details below to connect directly with the clinic via WhatsApp or email.
+                  Fill your details below to book easily on WhatsApp or Email.
                 </p>
               </div>
 
@@ -204,8 +204,8 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
 
               {submittedState === 'success' && (
                 <div className="mb-6 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-800" role="status">
-                  <strong className="block font-semibold mb-1">Appointment Request Initiated</strong>
-                  Your request details have been prepared for WhatsApp transmission to <strong>+91 99526 02577</strong>. Our team will verify slot availability and confirm your appointment promptly.
+                  <strong className="block font-semibold mb-1">Appointment Details Ready!</strong>
+                  Your details are ready for WhatsApp to <strong>+91 99526 02577</strong>. Our clinic staff will confirm your time quickly.
                 </div>
               )}
 
@@ -214,7 +214,7 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
                   {/* Name */}
                   <div>
                     <label htmlFor="patient-name" className="block text-xs font-semibold text-[#202421] uppercase tracking-wider mb-1.5">
-                      Patient Full Name <span className="text-red-500">*</span>
+                      Your Full Name <span className="text-red-500">*</span>
                     </label>
                     <input
                       id="patient-name"
@@ -230,7 +230,7 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
                   {/* Phone */}
                   <div>
                     <label htmlFor="patient-phone" className="block text-xs font-semibold text-[#202421] uppercase tracking-wider mb-1.5">
-                      Phone Number <span className="text-red-500">*</span>
+                      Mobile / Phone Number <span className="text-red-500">*</span>
                     </label>
                     <input
                       id="patient-phone"
@@ -247,7 +247,7 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
                 {/* Treatment Selection */}
                 <div>
                   <label htmlFor="treatment-select" className="block text-xs font-semibold text-[#202421] uppercase tracking-wider mb-1.5">
-                    Requested Dental Treatment
+                    Select Tooth Problem / Treatment
                   </label>
                   <select
                     id="treatment-select"
@@ -260,7 +260,7 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
                         {t.title}
                       </option>
                     ))}
-                    <option value="General Inquiry / Other">General Inquiry / Other Consultation</option>
+                    <option value="General Tooth Checkup / Other Problem">General Tooth Checkup / Other Problem</option>
                   </select>
                 </div>
 
@@ -268,7 +268,7 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
                   {/* Preferred Date */}
                   <div>
                     <label htmlFor="preferred-date" className="block text-xs font-semibold text-[#202421] uppercase tracking-wider mb-1.5">
-                      Preferred Date <span className="text-red-500">*</span>
+                      Select Preferred Date <span className="text-red-500">*</span>
                     </label>
                     <input
                       id="preferred-date"
@@ -284,7 +284,7 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
                   {/* Preferred Slot */}
                   <div>
                     <label htmlFor="preferred-slot" className="block text-xs font-semibold text-[#202421] uppercase tracking-wider mb-1.5">
-                      Preferred Time Slot
+                      Select Morning or Evening Time
                     </label>
                     <select
                       id="preferred-slot"
@@ -301,14 +301,14 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
                 {/* Notes */}
                 <div>
                   <label htmlFor="appointment-notes" className="block text-xs font-semibold text-[#202421] uppercase tracking-wider mb-1.5">
-                    Notes or Specific Dental Symptoms (Optional)
+                    Tell Us Your Tooth Problem (Optional)
                   </label>
                   <textarea
                     id="appointment-notes"
                     rows={3}
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
-                    placeholder="Briefly describe any tooth pain, sensitivity, or previous dental treatment history..."
+                    placeholder="Briefly tell us your tooth pain, swelling, bleeding gums, or other problem..."
                     className="w-full px-3.5 py-2.5 rounded-lg bg-white border border-[#E2E5E0] text-sm text-[#202421] placeholder:text-[#6B716D]/60 focus:bg-white focus:border-[#276B65] focus:outline-none transition-colors resize-none"
                   ></textarea>
                 </div>
@@ -319,7 +319,7 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
                     type="submit"
                     className="flex-1 inline-flex items-center justify-center bg-[#276B65] hover:bg-[#1E5550] text-white text-sm font-semibold px-5 py-3 rounded-lg transition-all shadow-xs focus:outline-none focus:ring-2 focus:ring-[#276B65]/40 active:scale-[0.99] cursor-pointer"
                   >
-                    <span>Send Request via WhatsApp</span>
+                    <span>Book via WhatsApp</span>
                   </button>
 
                   <button
@@ -332,7 +332,7 @@ export function AppointmentSection({ selectedTreatment }: AppointmentSectionProp
                 </div>
 
                 <p className="text-[11px] text-[#6B716D] text-center pt-1 leading-normal">
-                  Your appointment request connects directly with our reception. No automated marketing or spam.
+                  We will call or message you on WhatsApp to confirm your appointment time.
                 </p>
               </form>
             </div>

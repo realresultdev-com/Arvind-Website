@@ -11,10 +11,10 @@ export function GoogleReviews() {
   const filterTabs = [
     { id: 'all', label: isTamil ? 'அனைத்து மதிப்புரைகள்' : 'All Reviews (270+)' },
     { id: 'rct', label: isTamil ? 'வேர் சிகிச்சை (RCT)' : 'Root Canal (RCT)' },
-    { id: 'cleaning', label: isTamil ? 'பல் சுத்தம்' : 'Dental Cleaning' },
-    { id: 'extraction', label: isTamil ? 'பல் எடுத்தல்' : 'Wisdom Tooth' },
-    { id: 'braces', label: isTamil ? 'பல் சீரமைப்பு' : 'Braces & Alignment' },
-    { id: 'pediatric', label: isTamil ? 'குழந்தைகள் சிகிச்சை' : 'Pediatric Care' },
+    { id: 'cleaning', label: isTamil ? 'பல் சுத்தம்' : 'Tooth Cleaning' },
+    { id: 'extraction', label: isTamil ? 'பல் எடுத்தல்' : 'Tooth Removal' },
+    { id: 'braces', label: isTamil ? 'பல் சீரமைப்பு' : 'Teeth Clip (Braces)' },
+    { id: 'pediatric', label: isTamil ? 'குழந்தைகள் சிகிச்சை' : 'Children Tooth Care' },
   ]
 
   const filteredReviews = GOOGLE_REVIEWS.filter((rev) => {
@@ -74,7 +74,7 @@ export function GoogleReviews() {
               <p className="text-base text-[#6B716D] max-w-xl leading-relaxed">
                 {isTamil
                   ? 'நாமக்கல், அரவிந்த் பல் மருத்துவமனையில் சிகிச்சை பெற்ற நோயாளிகளின் உண்மையான கூகுள் கருத்துக்கள்.'
-                  : 'Real, verified feedback from patients treated at Dr. Aravinth\'s Dental Care in Namakkal.'}
+                  : 'Real reviews from people treated at Dr. Aravinth\'s Dental Care in Namakkal.'}
               </p>
             </div>
 
@@ -272,7 +272,7 @@ export function GoogleReviews() {
               <span className="text-xs text-[#6B716D]">
                 {isTamil
                   ? 'உங்கள் அனுபவத்தை கூகுள் மேப்ஸில் பகிர்ந்து மற்ற நோயாளிகளுக்கு உதவுங்கள்.'
-                  : 'Share your consultation experience and review us directly on Google Maps.'}
+                  : 'Share your feedback and rating directly on Google Maps.'}
               </span>
             </div>
           </div>

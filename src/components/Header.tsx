@@ -76,7 +76,7 @@ export function Header({ onBookAppointmentClick }: HeaderProps) {
               onClick={onBookAppointmentClick}
               className="bg-[#276B65] hover:bg-[#1E5550] text-white text-sm font-medium px-4 py-2.5 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-[#276B65]/40 active:scale-[0.98] cursor-pointer"
             >
-              <span>Book Appointment</span>
+              <span>Book Doctor Appointment</span>
             </button>
           </div>
 
@@ -133,7 +133,7 @@ export function Header({ onBookAppointmentClick }: HeaderProps) {
               }}
               className="w-full flex items-center justify-center py-3 px-4 text-sm font-semibold text-white bg-[#276B65] rounded-lg shadow-sm cursor-pointer"
             >
-              <span>Book an Appointment</span>
+              <span>Book Doctor Appointment</span>
             </button>
           </div>
         </div>

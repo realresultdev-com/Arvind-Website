@@ -10,13 +10,13 @@ export function DoctorsPage() {
       <section className="py-16 sm:py-24 bg-[#F2F3F0] border-b border-[#E2E5E0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-xs uppercase tracking-wider text-[#276B65] font-semibold mb-3">
-            <span>Clinical Leadership</span>
+            <span>Our Caring Doctors</span>
           </div>
           <h1 className="font-heading text-4xl sm:text-5xl font-semibold text-[#202421] tracking-tight mb-6">
             Meet Our Dental Doctors.
           </h1>
           <p className="text-lg text-[#6B716D] leading-relaxed max-w-2xl mx-auto">
-            Led by registered dental surgeons dedicated to evidence-based practice, patient comfort, and transparent communication in Namakkal.
+            Experienced, friendly dental doctors dedicated to pain-free treatment, honest advice, and gentle care in Namakkal.
           </p>
         </div>
       </section>
@@ -49,7 +49,7 @@ export function DoctorsPage() {
                   <div className="space-y-4 text-sm text-[#6B716D] leading-relaxed mb-8">
                     <div>
                       <span className="text-xs font-semibold text-[#202421] block uppercase tracking-wider mb-1">
-                        Clinical Role & Focus
+                        Doctor Role & Speciality
                       </span>
                       <strong className="text-base text-[#202421] font-semibold block mb-2">
                         {doc.role}
@@ -59,10 +59,10 @@ export function DoctorsPage() {
 
                     <div className="pt-4 border-t border-[#E2E5E0]">
                       <span className="text-xs font-semibold text-[#202421] block uppercase tracking-wider mb-2">
-                        Approach to Patient Care
+                        How Doctor Cares for You
                       </span>
                       <p>
-                        Believes in attentive, unrushed consultations where patients are encouraged to express concerns freely. Every recommended treatment plan is customized to preserve natural oral structures while ensuring complete patient comfort.
+                        Listens patiently to your tooth problem without rushing. Explains everything in simple words and recommends treatments that save your natural teeth with zero pain.
                       </p>
                     </div>
                   </div>
@@ -70,14 +70,14 @@ export function DoctorsPage() {
 
                 <div className="pt-6 border-t border-[#E2E5E0] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   <div className="text-xs text-[#6B716D]">
-                    <span className="font-medium text-[#276B65] block">Registered Dental Surgeon</span>
+                    <span className="font-medium text-[#276B65] block">Qualified Dental Doctor</span>
                     <span>Namakkal Clinic</span>
                   </div>
                   <Link
                     to="/contact"
                     className="inline-flex items-center text-xs font-semibold text-[#276B65] hover:text-[#1E5550]"
                   >
-                    <span>{isTamil ? `${doc.tamilName || doc.name} முன்பதிவு` : `Request Appointment with ${doc.name}`} →</span>
+                    <span>{isTamil ? `${doc.tamilName || doc.name} முன்பதிவு` : `Book with ${doc.name}`} →</span>
                   </Link>
                 </div>
               </div>
@@ -102,20 +102,20 @@ export function DoctorsPage() {
               </div>
               <div className="lg:col-span-7">
                 <div className="text-xs uppercase tracking-wider text-[#276B65] font-semibold mb-2">
-                  <span>{isTamil ? 'உண்மையான மருத்துவமனை அறை' : 'Verified Clinical Practice'}</span>
+                  <span>{isTamil ? 'உண்மையான மருத்துவமனை அறை' : 'Clean Doctor Consultation Room'}</span>
                 </div>
                 <h3 className="font-heading text-xl sm:text-2xl font-semibold text-[#202421] mb-3">
-                  {isTamil ? 'நேரடி மருத்துவ ஆலோசனை மற்றும் பரிசோதனை' : 'Direct Doctor Consultations in a Private Setting'}
+                  {isTamil ? 'நேரடி மருத்துவ ஆலோசனை மற்றும் பரிசோதனை' : 'Friendly & Private Doctor Consultation'}
                 </h3>
                 <p className="text-sm text-[#6B716D] leading-relaxed mb-4">
                   {isTamil
                     ? 'சேலம் மெயின் ரோட்டில் அமைந்துள்ள எங்கள் மருத்துவமனையில் நோயாளிகளுக்கு அமைதியான, பிரத்தியேக ஆலோசனை அறையில் விரிவான பரிசோதனை மற்றும் ஆலோசனை வழங்கப்படுகிறது.'
-                    : "At our Salem Main Road clinic, consultations are held privately with Dr. P. Aravinth and Dr. Sangavi Aravinth to ensure confidentiality, unhurried diagnosis, and attentive patient discussions."}
+                    : "At our Salem Main Road clinic, you can sit and talk freely with Dr. P. Aravinth and Dr. Sangavi Aravinth in a quiet, private room. We explain your tooth problem clearly without any hurry."}
                 </p>
                 <div className="p-4 rounded-xl bg-[#F0F6F5] border border-[#276B65]/20 text-xs text-[#276B65] font-medium">
                   {isTamil
                     ? 'பல் மருத்துவ கவுன்சில் விதிமுறைகளின்படி பதிவு செய்யப்பட்ட பட்டங்கள் மட்டுமே இங்கு குறிப்பிடப்பட்டுள்ளன.'
-                    : 'Operating strictly under Dental Council ethics with verified degrees and evidence-based clinical protocols.'}
+                    : 'Government-registered dental doctors with verified BDS degrees providing safe, certified treatments.'}
                 </div>
               </div>
             </div>
@@ -127,17 +127,17 @@ export function DoctorsPage() {
       <section className="py-16 bg-[#276B65] text-white text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <h2 className="font-heading text-3xl font-semibold text-white">
-            Schedule a Consultation with Our Doctors
+            Meet Our Friendly Doctors
           </h2>
           <p className="text-sm text-white/85 max-w-lg mx-auto">
-            Book online or call directly to discuss your dental health questions.
+            Book online via WhatsApp or call us directly to check your tooth problem.
           </p>
           <div className="pt-2 flex justify-center gap-4">
             <Link
               to="/contact"
               className="bg-white text-[#276B65] hover:bg-[#FAFAF7] font-semibold text-sm px-6 py-3.5 rounded-lg shadow-sm transition-colors inline-block"
             >
-              <span>Book Appointment</span>
+              <span>Book Doctor Appointment</span>
             </Link>
           </div>
         </div>

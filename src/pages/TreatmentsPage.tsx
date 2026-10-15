@@ -8,11 +8,11 @@ export function TreatmentsPage() {
   const [activeCategory, setActiveCategory] = useState<string>('all')
 
   const categories = [
-    { id: 'all', label: 'All Services' },
-    { id: 'preventive', label: 'Preventive Care' },
-    { id: 'restorative', label: 'Restorative & Endodontics' },
-    { id: 'surgical', label: 'Extractions & Surgery' },
-    { id: 'orthodontic', label: 'Orthodontics & Alignment' },
+    { id: 'all', label: isTamil ? 'அனைத்தும்' : 'All Treatments' },
+    { id: 'preventive', label: isTamil ? 'பல் சுத்தம் & பராமரிப்பு' : 'Teeth Cleaning & Checkup' },
+    { id: 'restorative', label: isTamil ? 'அடைத்தல் & வேர் சிகிச்சை' : 'Cavity Filling & Root Canal' },
+    { id: 'surgical', label: isTamil ? 'பல் எடுத்தல்' : 'Painless Tooth Removal' },
+    { id: 'orthodontic', label: isTamil ? 'பல் சீரமைப்பு (கிளிப்)' : 'Teeth Clip & Straightening' },
   ]
 
   const filteredTreatments =
@@ -26,13 +26,13 @@ export function TreatmentsPage() {
       <section className="py-16 sm:py-24 bg-[#F2F3F0] border-b border-[#E2E5E0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-xs uppercase tracking-wider text-[#276B65] font-semibold mb-3">
-            <span>Specialized Clinical Procedures</span>
+            <span>Gentle Dental Services</span>
           </div>
           <h1 className="font-heading text-4xl sm:text-5xl font-semibold text-[#202421] tracking-tight mb-6">
-            Dental Treatments & Services.
+            Tooth Treatments & Care.
           </h1>
           <p className="text-lg text-[#6B716D] leading-relaxed max-w-2xl mx-auto">
-            Comprehensive oral care delivered with precision, gentle touch, and evidence-based clinical practices in Namakkal.
+            All tooth treatments done gently without pain, with 100% clean tools and friendly doctors in Namakkal.
           </p>
         </div>
       </section>
@@ -98,7 +98,7 @@ export function TreatmentsPage() {
                     to={`/contact?treatment=${encodeURIComponent(treatment.title)}`}
                     className="inline-flex items-center text-xs font-semibold text-[#276B65] hover:text-[#1E5550]"
                   >
-                    <span>Request Consultation →</span>
+                    <span>Book This Treatment →</span>
                   </Link>
                 </div>
               </div>
@@ -109,17 +109,17 @@ export function TreatmentsPage() {
           <div className="mt-16 p-8 rounded-2xl bg-[#F2F3F0] border border-[#E2E5E0] flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="space-y-1">
               <h3 className="font-heading font-semibold text-lg text-[#202421]">
-                Unsure which treatment is right for your symptoms?
+                Not sure what is causing your tooth pain?
               </h3>
               <p className="text-xs sm:text-sm text-[#6B716D]">
-                Schedule an initial oral check-up. We will evaluate your teeth, discuss all available options, and answer your questions before recommending any procedure.
+                Come for a friendly teeth checkup. Our doctors will check your teeth, explain the exact problem in simple words, and tell you what needs to be done.
               </p>
             </div>
             <Link
               to="/contact"
               className="bg-[#276B65] hover:bg-[#1E5550] text-white text-xs font-semibold px-5 py-3 rounded-lg shrink-0 transition-colors"
             >
-              <span>Schedule Check-up</span>
+              <span>Book Doctor Checkup</span>
             </Link>
           </div>
         </div>
@@ -129,10 +129,10 @@ export function TreatmentsPage() {
       <section className="py-16 bg-[#202421] text-[#FAFAF7]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <h2 className="font-heading text-2xl sm:text-3xl font-semibold text-white">
-            Have questions about a specific dental procedure?
+            Have any questions or severe tooth pain?
           </h2>
           <p className="text-xs sm:text-sm text-[#A2A8A3] max-w-xl mx-auto">
-            Our clinical desk is available Monday through Saturday to answer questions about treatment timelines and appointment availability.
+            Our clinic staff is ready to help you on phone or WhatsApp. Call us directly to ask any doubts or book your appointment.
           </p>
           <div className="pt-2">
             <a

@@ -7,23 +7,23 @@ export function AboutPage() {
   const commitments = [
     {
       number: '01',
-      title: 'Comfort-Centered Care & Anxiety Management',
-      description: 'We understand that visiting the dental clinic can cause unease. Our entire clinical procedure is designed around gentle touch, clear communication at each step, and respectful pacing that prioritizes your comfort.'
+      title: '100% Pain-Free & Gentle Treatment',
+      description: 'Many people feel scared or nervous to visit a dentist. We make sure you feel zero fear. Our doctors treat you very gently, explain every step beforehand, and give you comfortable breaks.'
     },
     {
       number: '02',
-      title: 'Transparent Diagnosis & Honest Guidance',
-      description: 'Before any treatment begins, we explain the condition of your teeth and gums in plain language. We outline all viable options, treatment timelines, and recommendations so you can make informed choices with complete peace of mind.'
+      title: 'Simple Explanation & Honest Advice',
+      description: 'Before starting any treatment, we explain your tooth problem in simple words. We clearly tell you the cost and time, and recommend only what is truly necessary for your teeth.'
     },
     {
       number: '03',
-      title: 'Conservative & Natural Tooth Preservation',
-      description: 'Our primary clinical objective is always to protect and preserve your natural dental structure. We practice conservative dentistry, recommending procedures only when they genuinely benefit your oral health.'
+      title: 'Saving Your Natural Teeth First',
+      description: 'Our first goal is always to save your natural tooth whenever possible through cleaning, filling, or root canal. We advise removing a tooth only when there is no other choice.'
     },
     {
       number: '04',
-      title: 'Rigorous Autoclave Sterilization Protocols',
-      description: 'Patient safety is non-negotiable. Every surgical and examination tool undergoes multi-stage cleaning and medical-grade autoclave sterilization before every patient consultation.'
+      title: '100% Clean & Machine-Boiled Tools (Zero Germs)',
+      description: 'Your safety is our top priority. Every tool is machine-cleaned and steam-sterilized (autoclaved) at high heat before each patient. Needles and cups are always single-use and thrown away.'
     }
   ]
 
@@ -36,10 +36,10 @@ export function AboutPage() {
             <span>About Dr. Aravinth's Dental Care</span>
           </div>
           <h1 className="font-heading text-4xl sm:text-5xl font-semibold text-[#202421] tracking-tight mb-6">
-            Care That Puts You First.
+            Caring Tooth Care For Your Family.
           </h1>
           <p className="text-lg text-[#6B716D] leading-relaxed max-w-2xl mx-auto">
-            A patient-focused dental practice located on Salem Main Road in Namakkal, dedicated to ethical dentistry, clinical excellence, and lifelong oral wellness.
+            A friendly dental clinic on Salem Main Road in Namakkal, helping patients smile without pain, fear, or unnecessary costs.
           </p>
         </div>
       </section>
@@ -62,25 +62,25 @@ export function AboutPage() {
               <p className="mt-3 text-xs text-[#6B716D]">
                 {isTamil
                   ? 'சேலம் மெயின் ரோட்டில் அமைந்துள்ள எங்கள் மருத்துவமனையில் நவீன கருவிகளுடன் கூடிய அமைதியான சிகிச்சை சூழல்.'
-                  : 'Consultation and clinical treatment conducted with empathy, attentiveness, and modern precision.'}
+                  : 'Gentle dental checkup and treatment in a clean, quiet environment.'}
               </p>
             </div>
 
             <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
               <h2 className="font-heading text-2xl sm:text-3xl font-semibold text-[#202421] tracking-tight leading-snug">
-                Building Trust Through Ethical, Patient-Centered Dentistry
+                Honest, Pain-Free Dental Care You Can Trust
               </h2>
               <div className="space-y-4 text-base text-[#6B716D] leading-relaxed">
                 <p>
                   {isTamil
                     ? 'அரவிந்த் பல் மருத்துவமனையில், பல் மருத்துவரை அணுகுவது ஒரு இதமான மற்றும் மனநிறைவான அனுபவமாக அமைய வேண்டும் என்பதை நாங்கள் உறுதியாக நம்புகிறோம். நாமக்கல், சேலம் மெயின் ரோட்டில் சனு ஹோட்டல் எதிரே அமைந்துள்ள எங்கள் மருத்துவமனை அனைத்து வயதினருக்கும் சிறந்த சிகிச்சையை வழங்குகிறது.'
-                    : "At Dr. Aravinth's Dental Care, we believe that visiting the dentist should be a comfortable and reassuring experience. Conveniently located opposite Sanu Hotel on Salem Main Road, Namakkal, our clinic serves children, adults, and seniors across the region."}
+                    : "At Dr. Aravinth's Dental Care, we believe that visiting the dentist should be a comfortable and peaceful experience. Located opposite Sanu Hotel on Salem Main Road, Namakkal, our clinic welcomes children, adults, and elderly patients."}
                 </p>
                 <p>
-                  We recognize that no two smiles are identical. Our dental surgeons take the time to evaluate each case thoroughly, listening closely to patient concerns and presenting realistic, clinically validated solutions rather than rushed recommendations.
+                  We understand that every patient's tooth problem is different. Our doctors listen patiently to your problem, check your teeth carefully, and explain the best treatment options in simple words before starting anything.
                 </p>
                 <p>
-                  From routine dental cleanings and tooth-colored restorations to advanced root canal treatments and orthodontic consultations, every procedure is carried out with precision, modern techniques, and meticulous attention to detail.
+                  From teeth cleaning and cavity filling to root canal (saving painful teeth) and teeth clip (straightening), we perform all treatments gently with modern equipment.
                 </p>
               </div>
             </div>
@@ -93,13 +93,13 @@ export function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-16">
             <div className="text-xs uppercase tracking-wider text-[#276B65] font-semibold mb-3">
-              <span>Our Practice Standards</span>
+              <span>Our Promises</span>
             </div>
             <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-[#202421] tracking-tight leading-tight mb-4">
-              Our Core Clinical Commitments.
+              Our 4 Core Promises to You.
             </h2>
             <p className="text-base text-[#6B716D] leading-relaxed">
-              These fundamental standards guide every interaction, consultation, and treatment in our clinic.
+              We follow these simple principles every day for every patient who visits our clinic.
             </p>
           </div>
 
@@ -130,26 +130,26 @@ export function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             <div className="lg:col-span-6 space-y-6">
               <div className="text-xs uppercase tracking-wider text-[#276B65] font-semibold">
-                <span>Infection Control</span>
+                <span>Clean & Safe Tools</span>
               </div>
               <h2 className="font-heading text-3xl font-semibold text-[#202421] tracking-tight">
-                Modern Sterilization & Hygiene Protocol
+                100% Clean & Germ-Free Clinic Environment
               </h2>
               <p className="text-base text-[#6B716D] leading-relaxed">
-                We strictly observe clinical sterilization standards to maintain an immaculate environment for every patient.
+                We keep all dental chairs and tools 100% clean and germ-free so you and your family are completely safe.
               </p>
               <ul className="space-y-3 text-sm text-[#6B716D]">
                 <li className="flex items-start gap-3">
                   <span className="text-[#276B65] font-bold">—</span>
-                  <span><strong>Autoclaved Instruments:</strong> All diagnostic and surgical instruments are packaged and autoclaved under monitored temperature and pressure.</span>
+                  <span><strong>Machine-Boiled Tools:</strong> All instruments are washed, sealed in pouches, and steam-boiled (autoclaved) at high heat before touching your teeth.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-[#276B65] font-bold">—</span>
-                  <span><strong>Disinfected Operatory Surfaces:</strong> The dental chair and operatory surfaces are thoroughly sanitized between each patient appointment.</span>
+                  <span><strong>Sanitized Dental Chairs:</strong> The treatment chair, light, and tables are sprayed and wiped clean after every single patient.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-[#276B65] font-bold">—</span>
-                  <span><strong>Single-Use Disposables:</strong> Syringes, suction tips, patient bibs, and gloves are strictly single-use and disposed of in accordance with healthcare guidelines.</span>
+                  <span><strong>New Single-Use Items:</strong> Needles, cups, gloves, and patient sheets are used only once and thrown away immediately.</span>
                 </li>
               </ul>
             </div>
@@ -177,17 +177,17 @@ export function AboutPage() {
       <section className="py-16 bg-[#276B65] text-white text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
           <h2 className="font-heading text-3xl font-semibold tracking-tight text-white">
-            Experience Gentle, Professional Dental Care
+            Get Gentle, Pain-Free Tooth Treatment Today
           </h2>
           <p className="text-sm sm:text-base text-white/85 max-w-xl mx-auto">
-            Book an appointment with Dr. Aravinth and our clinical team today.
+            Book your doctor appointment with Dr. Aravinth and team today.
           </p>
           <div className="pt-2">
             <Link
               to="/contact"
               className="bg-white text-[#276B65] hover:bg-[#FAFAF7] font-semibold text-sm px-6 py-3.5 rounded-lg shadow-sm transition-colors inline-block"
             >
-              <span>Schedule a Consultation</span>
+              <span>Book Doctor Appointment</span>
             </Link>
           </div>
         </div>

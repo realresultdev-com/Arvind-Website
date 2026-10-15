@@ -18,23 +18,23 @@ export function HomePage() {
     },
     {
       id: 'preventive',
-      label: isTamil ? 'பல் சுத்தம் & பாதுகாப்பு' : 'Preventive & Hygiene',
+      label: isTamil ? 'பல் சுத்தம் & பாதுகாப்பு' : 'Teeth Cleaning',
     },
     {
       id: 'restorative',
-      label: isTamil ? 'வேர் சிகிச்சை & அடைத்தல்' : 'Restorative & RCT',
+      label: isTamil ? 'வேர் சிகிச்சை & அடைத்தல்' : 'Filling & Root Canal',
     },
     {
       id: 'crowns',
-      label: isTamil ? 'பல் தொப்பி & பாலங்கள்' : 'Crowns & Bridges',
+      label: isTamil ? 'பல் தொப்பி & பாலங்கள்' : 'Tooth Cap & Bridges',
     },
     {
       id: 'orthodontic',
-      label: isTamil ? 'பல் சீரமைப்பு (கிளிப்)' : 'Orthodontics & Braces',
+      label: isTamil ? 'பல் சீரமைப்பு (கிளிப்)' : 'Teeth Clip (Straightening)',
     },
     {
       id: 'surgical',
-      label: isTamil ? 'பல் எடுத்தல் & ஞானப்பல்' : 'Oral Surgery & Extraction',
+      label: isTamil ? 'பல் எடுத்தல் & ஞானப்பல்' : 'Painless Tooth Removal',
     },
   ]
 
@@ -58,15 +58,15 @@ export function HomePage() {
           {/* Section Heading matching user screenshot */}
           <div className="text-center max-w-3xl mx-auto">
             <div className="text-xs uppercase tracking-wider text-[#276B65] font-semibold mb-2.5">
-              <span>{isTamil ? 'மருத்துவ சேவைகள்' : 'Clinical Dental Care'}</span>
+              <span>{isTamil ? 'மருத்துவ சேவைகள்' : 'Dental Services'}</span>
             </div>
             <h2 className="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-[#18211E] tracking-tight">
-              {isTamil ? 'எங்கள் சிகிச்சை கட்டமைப்பு' : 'Our Treatment Grid'}
+              {isTamil ? 'எங்கள் சிகிச்சை கட்டமைப்பு' : 'Treatments We Provide'}
             </h2>
             <p className="text-base sm:text-lg text-[#6B716D] mt-3 max-w-2xl mx-auto leading-relaxed">
               {isTamil
                 ? 'நவீன உபகரணங்கள் மற்றும் மருத்துவ ஒழுங்குடன் திட்டமிடப்பட்ட முழுமையான பல் சிகிச்சைகள்.'
-                : 'Comprehensive clinical dental solutions planned with gentle touch, precision, and patient-first comfort.'}
+                : 'Complete dental treatments for tooth pain, yellow dirt, holes, caps, and clips with gentle care.'}
             </p>
           </div>
 
@@ -123,7 +123,7 @@ export function HomePage() {
                     to={`/contact?treatment=${encodeURIComponent(treatment.title)}`}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#276B65] group-hover:text-[#1E5550] transition-colors"
                   >
-                    <span>{isTamil ? 'முன்பதிவு செய்ய' : 'Book Consultation'}</span>
+                    <span>{isTamil ? 'முன்பதிவு செய்ய' : 'Book Appointment'}</span>
                     <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                   </Link>
 
@@ -131,7 +131,7 @@ export function HomePage() {
                     to="/treatments"
                     className="text-[11px] font-medium text-[#6B716D] hover:text-[#202421] transition-colors"
                   >
-                    {isTamil ? 'விவரங்கள் →' : 'Learn more →'}
+                    {isTamil ? 'விவரங்கள் →' : 'Details →'}
                   </Link>
                 </div>
               </div>
@@ -142,19 +142,19 @@ export function HomePage() {
           <div className="mt-12 sm:mt-16 p-6 sm:p-8 rounded-2xl bg-[#F2F3F0] border border-[#E2E5E0] flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left">
             <div>
               <strong className="block text-sm sm:text-base font-semibold text-[#202421]">
-                {isTamil ? 'தனிப்பயனாக்கப்பட்ட ஆலோசனை தேவையா?' : 'Need guidance on which dental treatment you need?'}
+                {isTamil ? 'தனிப்பயனாக்கப்பட்ட ஆலோசனை தேவையா?' : 'Have tooth pain or doubts about treatment?'}
               </strong>
               <span className="text-xs sm:text-sm text-[#6B716D] mt-0.5 block">
                 {isTamil
                   ? `எங்கள் மருத்துவரை நேரடியாக அழைக்கவும் (${CLINIC_INFO.phone}) அல்லது ஆன்லைனில் முன்பதிவு செய்யவும்.`
-                  : `Call our clinical desk directly at +91 ${CLINIC_INFO.phone} or schedule an in-person evaluation.`}
+                  : `Call our clinic directly at +91 ${CLINIC_INFO.phone} or book your appointment online.`}
               </span>
             </div>
             <Link
               to="/contact"
               className="bg-[#276B65] hover:bg-[#1E5550] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-6 py-3.5 rounded-xl shadow-xs transition-colors shrink-0"
             >
-              <span>{isTamil ? 'நேரடி முன்பதிவு' : 'Request Appointment'}</span>
+              <span>{isTamil ? 'நேரடி முன்பதிவு' : 'Book Appointment'}</span>
             </Link>
           </div>
 
@@ -180,27 +180,27 @@ export function HomePage() {
 
             <div className="lg:col-span-6 flex flex-col justify-center">
               <div className="text-xs uppercase tracking-wider text-[#276B65] font-semibold mb-3">
-                <span>{isTamil ? 'எங்கள் நடைமுறை' : 'About Our Practice'}</span>
+                <span>{isTamil ? 'எங்கள் நடைமுறை' : 'About Our Clinic'}</span>
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-[#202421] tracking-tight leading-tight mb-6">
-                {isTamil ? 'உங்களுக்கு முன்னுரிமை அளிக்கும் சிகிச்சை.' : 'Care That Puts You First.'}
+                {isTamil ? 'உங்களுக்கு முன்னுரிமை அளிக்கும் சிகிச்சை.' : 'Friendly Tooth Care You Can Trust.'}
               </h2>
               <p className="text-base text-[#6B716D] leading-relaxed mb-6">
                 {isTamil
                   ? 'நாமக்கல், சேலம் மெயின் ரோட்டில் அமைந்துள்ள அரவிந்த் பல் மருத்துவமனை, அமைதியான மற்றும் நம்பகமான மருத்துவ சூழலில் அனைத்து வயதினருக்கும் சிறப்பான சிகிச்சையை வழங்குகிறது.'
-                  : "Located on Salem Main Road in Namakkal, Dr. Aravinth's Dental Care was established to provide individuals and families with thoughtful, dependable dental treatment in a calm, welcoming clinical atmosphere."}
+                  : "Located on Salem Main Road in Namakkal (opposite Sanu Hotel), Dr. Aravinth's Dental Care provides gentle, pain-free dental treatments in a neat and clean environment."}
               </p>
               <p className="text-base text-[#6B716D] leading-relaxed mb-8">
                 {isTamil
                   ? 'கனிவான அணுகுமுறை, நோயாளி ஆறுதல், வெளிப்படையான மருத்துவ வழிகாட்டுதல் மற்றும் இயற்கையான பற்களை பாதுகாக்கும் சிகிச்சைகளுக்கு முன்னுரிமை அளிக்கிறோம்.'
-                  : 'We prioritize gentle care, patient comfort, transparent explanations, and conservative dentistry designed to protect your natural teeth.'}
+                  : 'We listen patiently, treat with gentle hands, explain problems in simple words, and always try to save your natural teeth.'}
               </p>
               <div>
                 <Link
                   to="/about"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-[#276B65] hover:text-[#1E5550] transition-colors"
                 >
-                  <span>{isTamil ? 'எங்கள் அணுகுமுறை பற்றி மேலும் அறிய' : 'Read More About Our Approach'}</span>
+                  <span>{isTamil ? 'எங்கள் அணுகுமுறை பற்றி மேலும் அறிய' : 'More About Our Clinic'}</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -215,10 +215,10 @@ export function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             <div className="lg:col-span-7">
               <div className="text-xs uppercase tracking-wider text-[#276B65] font-semibold mb-3">
-                <span>Our Principles</span>
+                <span>Why Choose Us</span>
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-[#202421] tracking-tight leading-tight mb-6">
-                A Thoughtful Dental Experience.
+                Gentle Care, No Fear & Fair Fees.
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
                 {WHY_CHOOSE_US.map((item, idx) => (
@@ -250,12 +250,12 @@ export function HomePage() {
               </div>
               <div className="mt-3.5 p-4 rounded-xl bg-white border border-[#E2E5E0]">
                 <span className="text-xs font-semibold text-[#202421] block mb-1">
-                  {isTamil ? 'உயர் தர கிருமி நீக்கம் & பாதுகாப்பு' : 'Uncompromised Infection Control'}
+                  {isTamil ? 'உயர் தர கிருமி நீக்கம் & பாதுகாப்பு' : '100% Machine Cleaned Tools (Zero Germs)'}
                 </span>
                 <p className="text-xs text-[#6B716D] leading-relaxed">
                   {isTamil
                     ? 'ஒவ்வொரு சிகிச்சைக்கும் முன்பாக அனைத்து கருவிகளும் கடுமையான ஆட்டோகிளேவ் மூலம் கிருமி நீக்கம் செய்யப்படுகின்றன.'
-                    : 'Every instrument undergoes strict autoclave sterilization before each procedure.'}
+                    : 'Every tool is washed and sterilized with boiling hot steam machine before treating each patient.'}
                 </p>
               </div>
             </div>
@@ -272,17 +272,17 @@ export function HomePage() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
               <div className="text-xs uppercase tracking-wider text-[#276B65] font-semibold mb-3">
-                <span>Clinical Team</span>
+                <span>Our Doctors</span>
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-[#202421] tracking-tight leading-tight">
-                Meet Our Qualified Dental Surgeons.
+                Meet Our Dental Doctors in Namakkal.
               </h2>
             </div>
             <Link
               to="/doctors"
               className="inline-flex items-center gap-2 text-sm font-semibold text-[#276B65] hover:text-[#1E5550] shrink-0"
             >
-              <span>Learn More About the Doctors</span>
+              <span>More About Our Doctors</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -313,7 +313,7 @@ export function HomePage() {
                   </p>
                 </div>
                 <div className="pt-4 border-t border-[#E2E5E0] text-xs text-[#6B716D] flex justify-between">
-                  <span className="text-[#276B65] font-medium">Registered Surgeon</span>
+                  <span className="text-[#276B65] font-medium">Certified Dental Doctor</span>
                   <span>Namakkal Clinic</span>
                 </div>
               </div>
@@ -329,17 +329,17 @@ export function HomePage() {
       <section className="py-20 bg-[#276B65] text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
           <h2 className="font-heading text-3xl sm:text-4xl font-semibold tracking-tight text-white">
-            Ready to Schedule Your Dental Visit?
+            Have Tooth Pain? Visit Our Clinic Today
           </h2>
           <p className="text-base text-white/85 max-w-xl mx-auto leading-relaxed">
-            Connect directly with our reception on Salem Main Road, Namakkal, for appointments, consultation inquiries, or same-day relief.
+            Call our reception directly or message on WhatsApp for immediate relief and gentle tooth care on Salem Main Road, Namakkal.
           </p>
           <div className="pt-2 flex flex-wrap items-center justify-center gap-4">
             <Link
               to="/contact"
               className="bg-white text-[#276B65] hover:bg-[#FAFAF7] font-semibold text-sm px-6 py-3.5 rounded-lg shadow-sm transition-colors"
             >
-              <span>Book an Appointment Online</span>
+              <span>Book Appointment on WhatsApp</span>
             </Link>
             <a
               href={`tel:${CLINIC_INFO.phoneRaw}`}

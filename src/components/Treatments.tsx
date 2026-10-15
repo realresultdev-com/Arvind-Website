@@ -14,13 +14,13 @@ export function Treatments({ onSelectTreatment }: TreatmentsProps) {
         {/* Header */}
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#276B65] font-semibold mb-3">
-            <span>Clinical Treatments & Services</span>
+            <span>Dental Services</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-[#202421] tracking-tight leading-tight mb-4">
-            Comprehensive Dental Care.
+            Dental Treatments We Provide.
           </h2>
           <p className="text-base text-[#6B716D] leading-relaxed">
-            From essential routine maintenance to specialized restorative and orthodontic consultations, all treatments are planned with meticulous clinical care.
+            From simple teeth cleaning and tooth pain relief to cavity filling, root canal, and teeth clips — we provide gentle and painless tooth care.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export function Treatments({ onSelectTreatment }: TreatmentsProps) {
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#276B65] hover:text-[#1E5550] transition-colors text-left pt-4 border-t border-[#E2E5E0] group-hover:border-[#276B65]/30 cursor-pointer"
                 aria-label={`Book consultation for ${treatment.title}`}
               >
-                <span>Request Appointment</span>
+                <span>Book Appointment</span>
                 <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
               </button>
             </div>
@@ -61,14 +61,14 @@ export function Treatments({ onSelectTreatment }: TreatmentsProps) {
 
         {/* Reassuring note */}
         <div className="mt-8 text-center text-xs text-[#6B716D]">
-          <span>Need guidance on a specific condition? </span>
+          <span>Have tooth pain or doubts? </span>
           <a
             href="tel:9952602577"
             className="text-[#276B65] hover:underline font-medium"
           >
             Call us directly at 99526 02577
           </a>
-          <span> for personalized advice before booking.</span>
+          <span>. We will help you gladly.</span>
         </div>
       </div>
     </section>

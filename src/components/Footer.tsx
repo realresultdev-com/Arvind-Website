@@ -35,7 +35,7 @@ export function Footer() {
             </Link>
 
             <p className="text-xs sm:text-sm text-[#A2A8A3] leading-relaxed max-w-sm">
-              Dedicated to compassionate, evidence-based dentistry in Namakkal. Providing comprehensive dental solutions with strict clinical hygiene and patient-first care.
+              Gentle, pain-free dental care in Namakkal. We treat tooth pain, cavities, and all teeth problems with 100% clean tools and friendly doctors.
             </p>
 
             <div className="pt-2">
@@ -54,32 +54,32 @@ export function Footer() {
           {/* Quick Links */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-white">
-              Navigation
+              Quick Links
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-[#A2A8A3]">
               <li>
                 <Link to="/" className="hover:text-white transition-colors">
-                  Home Overview
+                  Home
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="hover:text-white transition-colors">
-                  About the Clinic
+                  About Clinic
                 </Link>
               </li>
               <li>
                 <Link to="/treatments" className="hover:text-white transition-colors">
-                  Treatments & Services
+                  Tooth Treatments
                 </Link>
               </li>
               <li>
                 <Link to="/doctors" className="hover:text-white transition-colors">
-                  Our Dental Doctors
+                  Our Doctors
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="hover:text-white transition-colors">
-                  Book an Appointment
+                  Book Doctor Appointment
                 </Link>
               </li>
             </ul>

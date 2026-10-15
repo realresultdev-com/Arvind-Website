@@ -37,7 +37,7 @@ export function ClinicTourGallery() {
           <p className="text-base sm:text-lg text-[#6B716D] leading-relaxed">
             {isTamil
               ? 'சேலம் மெயின் ரோட்டில் அமைந்துள்ள எங்களது தூய்மையான சிகிச்சை கூடம், நவீன பல் மருத்துவ நாற்காலி மற்றும் நோயாளி காத்திருப்பு கூடம்.'
-              : 'Located on Salem Main Road, opposite Sanu Hotel. Explore our actual sterilized operatory, modern treatment chairs, consultation suite, and welcoming reception.'}
+              : 'Located on Salem Main Road, opposite Sanu Hotel. Look at our clean treatment rooms, modern dental chairs, doctor consultation room, and comfortable waiting area.'}
           </p>
         </div>
 

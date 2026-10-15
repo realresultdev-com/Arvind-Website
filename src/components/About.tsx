@@ -1,20 +1,20 @@
 export function About() {
   const commitments = [
     {
-      title: 'Comfort-Centered Environment',
-      description: 'Dental care designed to ease anxiety, using gentle techniques and respectful pacing during every step of your appointment.'
+      title: '100% Pain-Free & Gentle Care',
+      description: 'We know dental treatment can make you scared. Our doctors treat you with gentle hands and patience so you feel no fear and zero pain.'
     },
     {
-      title: 'Transparent Diagnoses',
-      description: 'We take the time to show and explain your oral condition clearly, discussing all viable options without pressure.'
+      title: 'Simple Explanation & Honest Advice',
+      description: 'We show your tooth problem directly on X-ray and explain in simple words. We tell you the real cost upfront with zero hidden charges.'
     },
     {
-      title: 'Conservative Treatment Philosophy',
-      description: 'Preserving your natural teeth is our primary clinical priority. We only recommend procedures that serve your long-term health.'
+      title: 'Saving Your Natural Teeth First',
+      description: 'We always try our best to save your original teeth with filling or root canal. We never remove a tooth if it can be saved safely.'
     },
     {
-      title: 'Rigorous Clinical Hygiene',
-      description: 'Strict adherence to sterilization and infection-control guidelines to safeguard every patient who sits in our chair.'
+      title: '100% Machine-Boiled & Clean Tools',
+      description: 'Every single tool is cleaned and sterilized with boiling steam machine for every patient. 100% clean and safe from infection.'
     }
   ]
 
@@ -35,7 +35,7 @@ export function About() {
               />
             </div>
             <p className="mt-3 text-xs text-[#6B716D] px-1">
-              Patient consultation and treatment conducted in our modern operatory room on Salem Main Road
+              Patient consultation and treatment in our clean clinic room on Salem Main Road, Namakkal
             </p>
           </div>
 
@@ -46,15 +46,15 @@ export function About() {
             </div>
 
             <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-[#202421] tracking-tight leading-tight mb-6">
-              Care That Puts You First.
+              Friendly Tooth Care You Can Trust.
             </h2>
 
             <div className="space-y-4 text-base text-[#6B716D] leading-relaxed mb-8">
               <p>
-                At Dr. Aravinth's Dental Care, we believe that exceptional dental treatment begins with listening. Located on Salem Main Road in Namakkal, our clinic was established to provide families with thoughtful, dependable dental care in a warm and welcoming environment.
+                At Dr. Aravinth's Dental Care in Namakkal, we treat every patient like our own family. Located on Salem Main Road (opposite Sanu Hotel), our clinic is known for gentle, pain-free dental treatments.
               </p>
               <p>
-                Whether you visit us for a routine preventative cleaning, tooth pain relief, or orthodontic guidance, our approach remains consistent: thorough clinical evaluation, honest guidance, and treatment delivered with genuine care for your comfort.
+                Whether you have sudden tooth pain, need teeth cleaning, or want teeth clips for your children, we give honest advice with clear, fair charges and zero unwanted treatments.
               </p>
             </div>
 

@@ -8,15 +8,15 @@ export function WhyChooseUs() {
           {/* Left Column: Strengths Editorial Content */}
           <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#276B65] font-semibold mb-3">
-              <span>Our Practice Principles</span>
+              <span>Why Patients Trust Us</span>
             </div>
 
             <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-[#202421] tracking-tight leading-tight mb-6">
-              A Thoughtful Dental Experience.
+              Gentle Care, No Fear & Fair Fees.
             </h2>
 
             <p className="text-base text-[#6B716D] leading-relaxed mb-10 max-w-2xl">
-              We focus on building lasting relationships with our patients through honest clinical standards, respectful listening, and uncompromising hygiene.
+              We treat our patients with care, honesty, and respect. No fear, no unwanted treatments, and 100% clean boiled tools for every visit.
             </p>
 
             {/* 2-Column Balanced Grid with clean editorial numbering */}
@@ -39,13 +39,13 @@ export function WhyChooseUs() {
             {/* Practical Location Advantage (Clean, without decorative icon box) */}
             <div className="mt-10 p-6 rounded-xl bg-[#F2F3F0] border border-[#E2E5E0]">
               <span className="text-xs font-mono uppercase tracking-wider text-[#276B65] block font-semibold mb-1">
-                Accessibility
+                Easy to Reach
               </span>
               <strong className="text-[#202421] block font-semibold text-sm mb-1">
-                Central & Convenient Location in Namakkal
+                Easy Location on Salem Main Road, Namakkal
               </strong>
               <p className="text-xs sm:text-sm text-[#6B716D] leading-relaxed">
-                Located on Salem Main Road, directly opposite Sanu Hotel, with convenient access and parking for patients across Namakkal and surrounding areas.
+                Located opposite Sanu Hotel on Salem Main Road. Convenient bus access and vehicle parking for patients from all parts of Namakkal.
               </p>
             </div>
           </div>
@@ -67,10 +67,10 @@ export function WhyChooseUs() {
               {/* Informative Caption (Clean text, no icon box) */}
               <div className="mt-3.5 p-4 rounded-xl bg-white border border-[#E2E5E0]">
                 <span className="text-xs font-semibold text-[#202421] block mb-1">
-                  Uncompromised Infection Control
+                  100% Machine-Cleaned Tools (Zero Germs)
                 </span>
                 <p className="text-xs text-[#6B716D] leading-relaxed">
-                  Every surgical instrument undergoes multi-stage sterilization and autoclaving before each clinical procedure.
+                  Every tool is washed and sterilized with high-heat boiling steam machine before treating each patient.
                 </p>
               </div>
             </div>

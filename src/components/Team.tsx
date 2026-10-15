@@ -9,13 +9,13 @@ export function Team() {
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#276B65] font-semibold mb-3">
-            <span>Clinical Leadership</span>
+            <span>Our Doctors</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-[#202421] tracking-tight leading-tight mb-4">
-            Meet Our Dental Doctors.
+            Meet Our Caring Dental Doctors.
           </h2>
           <p className="text-base text-[#6B716D] leading-relaxed">
-            Led by qualified dental surgeons committed to gentle, evidence-based clinical practice and ethical patient care in Namakkal.
+            Experienced dental doctors in Namakkal providing gentle, pain-free tooth care and honest medical advice.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ export function Team() {
               </div>
 
               <div className="pt-6 border-t border-[#E2E5E0] flex items-center justify-between text-xs text-[#6B716D]">
-                <span className="font-medium text-[#276B65]">Registered Dental Surgeon</span>
+                <span className="font-medium text-[#276B65]">Certified Dental Doctor</span>
                 <span>Namakkal Clinic</span>
               </div>
             </div>
